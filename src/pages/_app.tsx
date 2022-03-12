@@ -1,5 +1,5 @@
 import { AppProps } from 'next/app';
-import { RecoilRoot } from "recoil";
+import { RecoilRoot } from 'recoil';
 
 import '@/styles/globals.css';
 // !STARTERCONF This is for demo purposes, remove @/styles/colors.css import immediately
@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <RecoilRoot>
       <Component {...pageProps} />
     </RecoilRoot>
-  )
+  );
 }
 
 export default MyApp;

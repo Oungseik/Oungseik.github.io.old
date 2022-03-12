@@ -1,9 +1,9 @@
 import * as React from 'react';
+import { useRecoilValue } from 'recoil';
 
-// !STARTERCONF -> Select !STARTERCONF and CMD + SHIFT + F
-// Before you begin editing, follow all comments with `STARTERCONF`,
-// to customize the default configuration.
+import { sideMenuToggleState } from '@/states/states';
 
 export default function HomePage() {
-  return <h1>Hello, World!</h1>;
+  const show = useRecoilValue(sideMenuToggleState);
+  return <h1>{show}</h1>;
 }
