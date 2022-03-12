@@ -1,3 +1,13 @@
+/* Header left icon font */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap');
+
+/* Something like header */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
+
+/* for the text content */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
