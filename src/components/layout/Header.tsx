@@ -1,5 +1,11 @@
 import * as React from 'react';
 
+import NavItems from './Navitems';
+
 export default function Header() {
-  return <header className='sticky top-0 z-50 bg-white'></header>;
+  return (
+    <header className='hidden h-16 border-b md:block'>
+      <NavItems />
+    </header>
+  );
 }
