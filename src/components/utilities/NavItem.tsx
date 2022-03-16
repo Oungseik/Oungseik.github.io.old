@@ -13,8 +13,8 @@ function NavItem({ href, current, text, icon }: NavItemProps) {
   return (
     <li
       className={clsxm(
-        current && 'text-sky-500',
-        'flex items-center space-x-1 text-xl font-semibold text-gray-100 transition duration-300 hover:text-sky-500'
+        'flex items-center space-x-1 text-xl font-semibold text-gray-100 transition duration-300 hover:text-sky-500',
+        current && 'text-sky-500'
       )}
     >
       {icon}

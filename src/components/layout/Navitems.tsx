@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import { AiFillHome } from 'react-icons/ai';
 import { BsPersonFill } from 'react-icons/bs';
 import { FaPencilAlt } from 'react-icons/fa';
@@ -23,11 +24,12 @@ const navItems = [
 ];
 
 function NavItems() {
+  const { route } = useRouter();
   return (
     <nav className='h-full bg-gray-700'>
       <ul className='flex h-full items-center justify-center md:space-x-10'>
         {navItems.map((item) => (
-          <NavItem key={item.text} {...item} />
+          <NavItem key={item.text} current={item.href === route} {...item} />
         ))}
       </ul>
     </nav>
