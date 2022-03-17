@@ -4,7 +4,7 @@ import NavItems from './Navitems';
 
 export default function Header() {
   return (
-    <header className='hidden h-16 border-b md:block'>
+    <header className=' sticky h-12 md:h-12'>
       <NavItems />
     </header>
   );
