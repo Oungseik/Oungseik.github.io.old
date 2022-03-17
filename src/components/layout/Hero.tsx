@@ -1,9 +1,11 @@
 import NextImage from '@/components/NextImage';
 import A from '@/components/utilities/A';
 
+import SocialMedia from './SocialMedia';
+
 function Hero() {
   return (
-    <main className='bg-hero-img md:bg-hero-img-lg flex items-center font-semibold text-gray-700 md:h-[400px]'>
+    <main className='bg-hero-img md:bg-hero-img-lg flex items-center  font-semibold text-gray-700 md:h-[500px]'>
       <div className='mx-auto space-y-6 py-10 text-center font-playFair tracking-wider md:w-[548px] md:text-xl'>
         <NextImage
           className='mx-auto block h-40 w-40 overflow-hidden rounded-full md:hidden'
@@ -34,6 +36,8 @@ function Hero() {
               More about me?
             </A>
           </p>
+
+          <SocialMedia />
         </div>
       </div>
     </main>

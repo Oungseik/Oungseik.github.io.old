@@ -6,6 +6,12 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
+      colors: {
+        facebook: '#4867AA',
+        linkedin: '#0A66C2',
+        github: '#161B22',
+        gitlab: '#F56A25',
+      },
       fontFamily: {
         roboto: ['Roboto', 'sans-serif'],
         lobster: ['Lobster', 'sans-serif'],
