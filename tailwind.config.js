@@ -37,10 +37,21 @@ module.exports = {
             backgroundPosition: '700px 0',
           },
         },
+        fadein: {
+          '0%, 50%': {
+            opacity: 0,
+            transform: 'translate(0, -32px)',
+          },
+          '100%': {
+            opacity: 0.99,
+            transform: 'translate(0, 0)',
+          },
+        },
       },
       animation: {
         flicker: 'flicker 3s linear infinite',
         shimmer: 'shimmer 1.3s linear infinite',
+        fadein: 'fadein 0.6s linear 1',
       },
     },
   },

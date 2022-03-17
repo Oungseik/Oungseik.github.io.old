@@ -14,7 +14,7 @@ function Hero() {
           height={160}
           width={160}
         />
-        <div className='space-y-3'>
+        <div className='animate-fadein space-y-3'>
           <p> Hello, there! </p>
           <p>
             I&apos;m{' '}
