@@ -5,7 +5,7 @@ import SocialMedia from './SocialMedia';
 
 function Hero() {
   return (
-    <main className='bg-hero-img md:bg-hero-img-lg flex items-center  font-semibold text-gray-700 md:h-[500px]'>
+    <main className='bg-hero-img md:bg-hero-img-lg flex items-center px-3 font-semibold text-gray-700 md:h-[500px]'>
       <div className='mx-auto space-y-6 py-10 text-center font-playFair tracking-wider md:w-[548px] md:text-xl'>
         <NextImage
           className='mx-auto block h-40 w-40 overflow-hidden rounded-full md:hidden'
@@ -31,7 +31,7 @@ function Hero() {
             State, Burma.{' '}
             <A
               href='/about'
-              className='border-b-2 border-sky-500/0 text-sky-500 transition duration-300 hover:border-sky-500/100'
+              className='border-b-2 border-sky-600/0 text-sky-600 transition duration-300 hover:border-sky-600/100'
             >
               More about me?
             </A>

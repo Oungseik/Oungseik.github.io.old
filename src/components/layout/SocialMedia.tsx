@@ -69,11 +69,11 @@ function SocialMedia() {
       <p>
         <a
           href='mailto:mhemaungthuwin@gmail.com'
-          className='border-b-2 border-b-sky-500/0 text-sky-500 transition duration-300 hover:border-sky-500/100'
+          className='border-b-2 border-b-sky-600/0 text-sky-600 transition duration-300 hover:border-sky-600/100'
         >
           Email me{' '}
         </a>
-        or find me on:
+        or reach me on:
       </p>
       <ul className='flex justify-between space-x-3 py-4 font-roboto text-base'>
         {socialMedias.map((sm) => (
