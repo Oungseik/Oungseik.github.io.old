@@ -44,7 +44,7 @@ function TimeLine({ from, to, title, description }: TimeLineProps) {
         <div className='flex space-x-8'>
           <IoMdStarOutline
             size='1.75rem'
-            className='shrink-0 bg-gray-700 text-white'
+            className='shrink-0 rounded-full bg-gray-700 text-white'
           />
           <div className='grow space-y-2'>
             <h2 className=' bg-gray-700 px-2 text-lg text-base font-semibold text-gray-100 md:text-xl'>
@@ -62,7 +62,7 @@ function TimeLine({ from, to, title, description }: TimeLineProps) {
 function Timelines() {
   return (
     <div className='mx-auto animate-fadein-timeline px-3 py-12 md:max-w-[548px] md:px-0 md:py-16'>
-      <h2 className='md flex items-center pb-8 text-2xl font-semibold text-sky-700 md:pb-10 md:text-3xl'>
+      <h2 className='md flex items-center pb-8 text-3xl font-semibold text-sky-700 md:pb-10'>
         <BsFillCalendarCheckFill />
         <span className='pl-2'>Timeline</span>
       </h2>

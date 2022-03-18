@@ -65,7 +65,7 @@ function SocialMediaButton({
 
 function SocialMedia() {
   return (
-    <div className='text-left md:block md:pt-8'>
+    <div className='pt-3 text-left md:block md:pt-8'>
       <p>
         <a
           href='mailto:mhemaungthuwin@gmail.com'
@@ -75,7 +75,7 @@ function SocialMedia() {
         </a>
         or reach me on:
       </p>
-      <ul className='flex justify-between space-x-3 py-4 font-roboto text-base'>
+      <ul className='flex justify-start space-x-3 py-4 font-roboto text-base md:justify-between'>
         {socialMedias.map((sm) => (
           <SocialMediaButton key={sm.type} {...sm} />
         ))}
