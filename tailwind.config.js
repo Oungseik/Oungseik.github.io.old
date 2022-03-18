@@ -40,7 +40,17 @@ module.exports = {
         fadein: {
           '0%, 50%': {
             opacity: 0,
-            transform: 'translate(0, -32px)',
+            transform: 'translate(0, -52px)',
+          },
+          '100%': {
+            opacity: 0.99,
+            transform: 'translate(0, 0)',
+          },
+        },
+        fadeinTimeLine: {
+          '0%, 67%': {
+            opacity: 0,
+            transform: 'translate(52px, 0)',
           },
           '100%': {
             opacity: 0.99,
@@ -51,7 +61,8 @@ module.exports = {
       animation: {
         flicker: 'flicker 3s linear infinite',
         shimmer: 'shimmer 1.3s linear infinite',
-        fadein: 'fadein 0.6s linear 1',
+        fadein: 'fadein 0.8s linear 1',
+        'fadein-timeline': 'fadeinTimeLine 1.25s linear',
       },
     },
   },
