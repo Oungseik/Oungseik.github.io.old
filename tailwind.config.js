@@ -50,11 +50,9 @@ module.exports = {
         fadeinTimeLine: {
           '0%, 67%': {
             opacity: 0,
-            transform: 'translate(52px, 0)',
           },
           '100%': {
             opacity: 0.99,
-            transform: 'translate(0, 0)',
           },
         },
       },
