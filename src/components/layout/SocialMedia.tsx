@@ -57,7 +57,7 @@ function SocialMediaButton({
     >
       <a className='flex space-x-1' href={href}>
         {icon}
-        <span>{type}</span>
+        <span className='hidden md:inline'>{type}</span>
       </a>
     </li>
   );
@@ -65,7 +65,7 @@ function SocialMediaButton({
 
 function SocialMedia() {
   return (
-    <div className='hidden pt-8 text-left md:block'>
+    <div className='text-left md:block md:pt-8'>
       <p>
         <a
           href='mailto:mhemaungthuwin@gmail.com'
