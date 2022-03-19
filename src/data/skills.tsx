@@ -20,6 +20,7 @@ export const skills: CardProps[] = [
       icon: <FaRust size='4rem' />,
     },
     cardBackProps: {
+      twClasses: 'text-xs',
       icon: <FaRust size='1.25rem' />,
       description:
         'My favorite programming language. Programming in small details may arise many problems, but these are reasons to learn.',
@@ -73,6 +74,7 @@ export const skills: CardProps[] = [
       icon: <SiGnu size='4rem' />,
     },
     cardBackProps: {
+      twClasses: 'text-xs',
       icon: <SiGnu size='1.25rem' />,
       description:
         'Not skillful as a professional system administrator, but I have Linux super-user experience especially Debian-based.',
