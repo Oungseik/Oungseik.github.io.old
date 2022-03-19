@@ -17,7 +17,7 @@ export type CardProps = {
 // if you need more reusability, try to implement with `renderProps` design pattern
 function Card({ title, cardFrontProps, cardBackProps }: CardProps) {
   return (
-    <div className={clsxm(styles.card, 'mx-auto h-56 w-40  md:h-64 md:w-48')}>
+    <div className={clsxm(styles.card, 'mx-auto h-64 w-48')}>
       <CardInner>
         <CardFront {...cardFrontProps} title={title} />
         <CardBack {...cardBackProps} title={title} />

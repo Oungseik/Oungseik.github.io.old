@@ -13,7 +13,7 @@ function CardFront({ twClasses, icon, title }: CardFrontProps) {
     <div
       className={clsxm(
         styles.cardFront,
-        'flex flex-col items-center justify-center space-y-3 rounded-lg',
+        'flex flex-col items-center justify-center space-y-3 rounded-lg text-xl tracking-wider text-gray-800 shadow-lg',
         twClasses
       )}
     >
