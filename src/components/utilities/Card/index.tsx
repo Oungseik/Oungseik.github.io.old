@@ -18,7 +18,7 @@ import CardInner from './CardInner';
 
 function Card() {
   return (
-    <div className={clsxm(styles.card, 'mx-auto my-10 h-64 w-48')}>
+    <div className={clsxm(styles.card, 'mx-auto h-64 w-48')}>
       <CardInner>
         <CardFront />
         <CardBack />

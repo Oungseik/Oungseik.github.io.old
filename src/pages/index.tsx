@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import * as React from 'react';
 
+import Cards from '@/components/layout/Cards';
 import Hero from '@/components/layout/Hero';
 import Timelines from '@/components/layout/Timelines';
-import Card from '@/components/utilities/Card';
 
 export default function HomePage() {
   return (
@@ -14,7 +14,7 @@ export default function HomePage() {
       <Hero />
       <Timelines />
       {/* this is just for demo */}
-      <Card />
+      <Cards />
     </>
   );
 }
