@@ -2,26 +2,25 @@ import styles from './Card.module.css';
 
 import clsxm from '@/lib/clsxm';
 
-import CardBack from './CardBack';
-import CardFront from './CardFront';
+import CardBack, { CardBackProps } from './CardBack';
+import CardFront, { CardFrontProps } from './CardFront';
 import CardInner from './CardInner';
 
-// type CardFrontType = {
-//   name: string;
-//   logo: JSX.Element;
-//   twClasses?: string;
-// };
+// title in CardFrontProps and CardBackProps are take from CardProps.title
+// to remove duplication of `title` when create data
+export type CardProps = {
+  title: string;
+  cardBackProps: CardBackProps;
+  cardFrontProps: CardFrontProps;
+};
 
-// type CardBackType = {};
-
-// type CardProps = {};
-
-function Card() {
+// if you need more reusability, try to implement with `renderProps` design pattern
+function Card({ title, cardFrontProps, cardBackProps }: CardProps) {
   return (
-    <div className={clsxm(styles.card, 'mx-auto h-64 w-48')}>
+    <div className={clsxm(styles.card, 'mx-auto h-56 w-40  md:h-64 md:w-48')}>
       <CardInner>
-        <CardFront />
-        <CardBack />
+        <CardFront {...cardFrontProps} title={title} />
+        <CardBack {...cardBackProps} title={title} />
       </CardInner>
     </div>
   );
