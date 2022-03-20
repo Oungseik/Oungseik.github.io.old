@@ -13,7 +13,6 @@ export default function HomePage() {
       </Head>
       <Hero />
       <Timelines />
-      {/* this is just for demo */}
       <Skills />
     </>
   );
