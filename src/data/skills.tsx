@@ -23,7 +23,7 @@ export const skills: CardProps[] = [
       twClasses: 'text-xs',
       icon: <FaRust size='1.25rem' />,
       description:
-        'My favorite programming language. Programming in small details may arise many problems, but these are reasons to learn.',
+        'My favorite programming language. Programming in small details may arise many problems, but these things remind me what I need to learn.',
     },
   },
 
@@ -97,7 +97,7 @@ export const skills: CardProps[] = [
     title: 'Next.js',
     cardFrontProps: {
       twClasses:
-        'bg-gradient-to-br from-gray-900 via-gray-700 to-gray-900 shadow-gray-900/60 text-white ',
+        'bg-gradient-to-br from-gray-900 via-gray-600 to-gray-900 shadow-gray-900/60 text-white ',
       icon: <SiNextdotjs size='4rem' />,
     },
     cardBackProps: {
