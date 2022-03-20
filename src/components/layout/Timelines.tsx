@@ -62,7 +62,7 @@ function TimeLine({ from, to, title, description }: TimeLineProps) {
 function Timelines() {
   return (
     <div className='mx-auto animate-fadein-timeline px-3 py-12 md:max-w-[548px] md:px-0 md:py-16'>
-      <h2 className='md flex items-center pb-8 text-3xl font-semibold text-sky-700 md:pb-10'>
+      <h2 className='flex items-center pb-8 text-3xl font-semibold text-sky-700 md:pb-10'>
         <BsFillCalendarCheckFill />
         <span className='pl-2'>Timeline</span>
       </h2>
