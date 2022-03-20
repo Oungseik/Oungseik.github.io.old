@@ -14,7 +14,7 @@ const timeLines = [
     to: 'Present',
     title: 'Gold Smith',
     description:
-      'Not as professional, just work as part time job and help my parent at home.',
+      "Currently, I'm working as a Gold Smith. I'm not really good at goldsmithing, just help my parents to make them happy.",
   },
   {
     from: '2019 January',
