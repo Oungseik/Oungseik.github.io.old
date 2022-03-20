@@ -1,6 +1,16 @@
 import Head from 'next/head';
 
-const tools = ['MySql', 'SqLite3', 'Svelte'];
+const tools = [
+  'MySql',
+  'SqLite3',
+  'Vite',
+  'Svelte',
+  'JQuery',
+  'Recoil.js',
+  'Python (numpy, pandas, scikit learn)',
+  'C',
+  'x86_64 Assembly',
+];
 
 export default function About() {
   return (
@@ -15,7 +25,6 @@ export default function About() {
             Hi, I&apos;m Min Aung Thu Win. Oung Seik is my name in the Mon
             language. I was born in Mawlamyine, Mon State, Burma.
           </p>
-
           <h2 className='pt-6 text-center text-xl font-semibold'>
             Childhood Life
           </h2>
@@ -26,7 +35,6 @@ export default function About() {
             Mawlamyine University from 2014 to 2018. I graduated with a Bachelor
             of Science(Maths) on Feb 14, 2019.{' '}
           </p>
-
           <h2 className='pt-6 text-center text-xl font-semibold'> Careers </h2>
           <p>
             My first job as a field officer in the KEB Hana microfinance company
@@ -36,7 +44,6 @@ export default function About() {
             store. I got a lot of experiences, such as how to deal with
             customers, about plants and treatments.
           </p>
-
           <h2 className='pt-6 text-center text-xl font-semibold'>
             Software Development Journey
           </h2>
@@ -44,16 +51,19 @@ export default function About() {
             After back from Sagaing, I started investing my time in software
             development. I started with Python programming language, to learn
             data science. But due to very few data science job opportunities in
-            my country, I changed my path to web development. I&apos;m curious
-            about how OS works on bare metal and how compilers emit different
-            machine codes for various hardware and operating systems. I learn
-            these things in my free time. Programming paradigms! Learning
-            Functional Programming is a lot easier for me than Object-oriented
-            Programming.
+            my country, I changed my path to web development.
+          </p>
+          <p>
+            I&apos;m curious about how OS works on bare metal and how compilers
+            emit different machine codes for various hardware and operating
+            systems. I learn these things in my free time. Programming
+            paradigms! Learning Functional Programming is a lot easier for me
+            than Object-oriented Programming.
           </p>
 
-          <h3 className='font-semibold'>
-            These are the things I have been learned but not used frequently.
+          <h3 className='pt-4 font-semibold'>
+            These are the things I have learned to some degree but have not
+            applied to my projects.
           </h3>
           <ul className='list-inside list-disc text-sky-600'>
             {tools.map((tool) => (
