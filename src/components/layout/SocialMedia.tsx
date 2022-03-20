@@ -1,41 +1,10 @@
-import {
-  FaFacebookSquare,
-  FaGithub,
-  FaGitlab,
-  FaLinkedin,
-} from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
 
 import clsxm from '@/lib/clsxm';
 
-const socialMedias: SocialMediaButtonProps[] = [
-  {
-    type: 'Facebook',
-    classNames: 'bg-facebook shadow-facebook/60',
-    icon: <FaFacebookSquare size='1.5rem' />,
-    href: 'https://www.facebook.com/oung.s.nyan.50552338',
-  },
-  {
-    type: 'Linkedin',
-    classNames: 'bg-linkedin shadow-linkedin/60',
-    icon: <FaLinkedin size='1.5rem' />,
-    href: 'https://www.linkedin.com/in/aung-thu-win-1565881b1/',
-  },
-  {
-    type: 'GitHub',
-    classNames: 'bg-github shadow-github/60',
-    icon: <FaGithub size='1.5rem' />,
-    href: 'https://github.com/Oungseik',
-  },
-  {
-    type: 'GitLab',
-    classNames: 'bg-gitlab shadow-gitlab/60',
-    icon: <FaGitlab size='1.5rem' />,
-    href: 'https://gitlab.com/mhemaungthuwin',
-  },
-];
+import { socialMedias } from '@/data/social-media-data';
 
-// TODO: need to add hyper link to the social media
-type SocialMediaButtonProps = {
+export type SocialMediaButtonProps = {
   type: string;
   classNames: string;
   icon: JSX.Element;
@@ -66,16 +35,17 @@ function SocialMediaButton({
 function SocialMedia() {
   return (
     <div className='pt-3 text-left md:block md:pt-8'>
-      <p>
+      <p className='flex text-gray-100'>
         <a
           href='mailto:mhemaungthuwin@gmail.com'
-          className='border-b-2 border-b-sky-600/0 text-sky-600 transition duration-300 hover:border-sky-600/100'
+          className='inline-flex items-center border-b-2 border-b-sky-600/0 pr-2 font-bold text-sky-600 transition duration-300 hover:border-sky-600/100'
         >
-          Email me{' '}
+          <MdEmail size='1.625rem' />
+          <span className='pl-1'>Email me</span>
         </a>
         or reach me on:
       </p>
-      <ul className='flex justify-start space-x-3 py-4 font-roboto text-base md:justify-between'>
+      <ul className='flex justify-start space-x-4 py-4 font-roboto text-base'>
         {socialMedias.map((sm) => (
           <SocialMediaButton key={sm.type} {...sm} />
         ))}
@@ -83,4 +53,5 @@ function SocialMedia() {
     </div>
   );
 }
+
 export default SocialMedia;

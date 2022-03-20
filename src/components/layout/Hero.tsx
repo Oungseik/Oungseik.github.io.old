@@ -1,8 +1,6 @@
 import NextImage from '@/components/NextImage';
 import A from '@/components/utilities/A';
 
-import SocialMedia from './SocialMedia';
-
 function Hero() {
   return (
     <main className='bg-hero-img md:bg-hero-img-lg flex items-center px-3 font-semibold text-gray-700 md:h-[500px]'>
@@ -36,8 +34,6 @@ function Hero() {
               More about me?
             </A>
           </p>
-
-          <SocialMedia />
         </div>
       </div>
     </main>
