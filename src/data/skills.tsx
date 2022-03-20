@@ -110,7 +110,7 @@ export const skills: CardProps[] = [
     title: 'Neovim',
     cardFrontProps: {
       twClasses:
-        'bg-gradient-to-br from-blue-900 via-gray-600 to-green-900 shadow-green-700/60 text-green-400',
+        'bg-gradient-to-br from-blue-900 via-gray-600 to-green-900 shadow-gray-500/60 text-green-400',
       icon: <SiNeovim size='4rem' />,
     },
     cardBackProps: {
