@@ -2,6 +2,7 @@ import { FaPython, FaRust } from 'react-icons/fa';
 import {
   SiGnu,
   SiJavascript,
+  SiNeovim,
   SiNextdotjs,
   SiReact,
   SiTypescript,
@@ -56,7 +57,7 @@ export const skills: CardProps[] = [
     title: 'Python',
     cardFrontProps: {
       twClasses:
-        'bg-gradient-to-br from-blue-500 to-yellow-500 shadow-gray-500/60',
+        'bg-gradient-to-br from-blue-700 via-gray-400 to-yellow-600 shadow-gray-500/60',
       icon: <FaPython size='4rem' />,
     },
     cardBackProps: {
@@ -103,6 +104,18 @@ export const skills: CardProps[] = [
     cardBackProps: {
       icon: <SiNextdotjs size='1.25rem' />,
       description: 'Next.js is one of the reason why I like React.',
+    },
+  },
+  {
+    title: 'Neovim',
+    cardFrontProps: {
+      twClasses:
+        'bg-gradient-to-br from-blue-900 via-gray-600 to-green-900 shadow-green-700/60 text-green-400',
+      icon: <SiNeovim size='4rem' />,
+    },
+    cardBackProps: {
+      icon: <SiNeovim size='1.25rem' />,
+      description: 'Neovim + LunarVim, my daily use text editor.',
     },
   },
 ];
