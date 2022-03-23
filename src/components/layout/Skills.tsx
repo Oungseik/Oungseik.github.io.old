@@ -14,7 +14,7 @@ function Skills() {
           These are the things I am most familiar with and use frequently.
         </p>
       </div>
-      <div className='my-8 max-h-96 overflow-auto py-8'>
+      <div className='mt-8 max-h-96 overflow-auto py-8 md:max-h-full md:overflow-visible'>
         <Cards />
       </div>
       {/* TODO : try to implement non confident skills with better idea */}
