@@ -12,8 +12,8 @@ const navItems = [
     icon: <AiFillHome size='1.2rem' />,
   },
   {
-    href: '/blogs',
-    text: 'blogs',
+    href: '/blog',
+    text: 'Blog',
     icon: <FaPencilAlt size='1.2rem' />,
   },
   {
