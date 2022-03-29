@@ -18,13 +18,14 @@ function SocialMediaButton({
   href,
 }: SocialMediaButtonProps) {
   return (
-    <li
-      className={clsxm(
-        'rounded-lg px-3 py-2 text-white shadow-lg transition-transform duration-300 hover:-translate-y-2',
-        classNames
-      )}
-    >
-      <a className='flex space-x-1' href={href}>
+    <li>
+      <a
+        className={clsxm(
+          'flex space-x-1 rounded-lg px-3 py-2 text-white shadow-lg transition-transform duration-300 hover:-translate-y-2',
+          classNames
+        )}
+        href={href}
+      >
         {icon}
         <span className='hidden md:inline'>{type}</span>
       </a>
