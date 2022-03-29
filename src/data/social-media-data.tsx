@@ -12,7 +12,7 @@ export const socialMedias: SocialMediaButtonProps[] = [
     type: 'Facebook',
     classNames: 'bg-facebook shadow-facebook/60',
     icon: <FaFacebookSquare size='1.5rem' />,
-    href: 'https://www.facebook.com/oung.s.nyan.50552338',
+    href: 'https://www.facebook.com/aung.t.win.5283166/',
   },
   {
     type: 'Linkedin',
