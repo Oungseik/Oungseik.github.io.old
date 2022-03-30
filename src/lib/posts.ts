@@ -7,11 +7,10 @@ import { Post } from './types';
 
 const POSTS_PATH = path.join(cwd(), 'contents');
 
-type FullPath = (fileName: string) => string;
-const fullPath: FullPath = (fileName: string) => `${POSTS_PATH}/${fileName}`;
+const fullPath = (filename: string) => `${POSTS_PATH}/${filename}`;
 
-const fileNames = fs.readdirSync(POSTS_PATH);
-const posts = fileNames.map((post) => post.replace(/.mdx$/, ''));
+const filenames = fs.readdirSync(POSTS_PATH);
+const slugs = filenames.map((post) => post.replace(/.mdx$/, ''));
 
 type GetPost = (path: string) => Post;
 const getPost: GetPost = (path) => {
@@ -21,4 +20,11 @@ const getPost: GetPost = (path) => {
   return { data, content };
 };
 
-export { fullPath, getPost, posts };
+const getAllPostsData = () => {
+  const postsFullPath = filenames.map(fullPath);
+  const allData = postsFullPath.map(getPost).map((post) => post.data);
+
+  return allData;
+};
+
+export { fullPath, getAllPostsData, getPost, slugs };

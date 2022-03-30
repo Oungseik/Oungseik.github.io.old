@@ -4,7 +4,7 @@ import Head from 'next/head';
 import { MDXRemote } from 'next-mdx-remote';
 import { serialize } from 'next-mdx-remote/serialize';
 
-import { fullPath, getPost, posts } from '@/lib/posts';
+import { fullPath, getPost, slugs } from '@/lib/posts';
 
 import Post from '@/components/layout/Post';
 
@@ -25,8 +25,8 @@ export default function BlogPosts({
 }
 
 export async function getStaticPaths() {
-  const paths = posts.map((post) => ({
-    params: { slug: post },
+  const paths = slugs.map((slug) => ({
+    params: { slug },
   }));
 
   return {
