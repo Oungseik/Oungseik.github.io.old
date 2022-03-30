@@ -1,4 +1,3 @@
-import mdxPrism from 'mdx-prism';
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
 import Head from 'next/head';
 import { MDXRemote } from 'next-mdx-remote';
@@ -44,7 +43,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const mdxSource = await serialize(content, {
     mdxOptions: {
       remarkPlugins: [],
-      rehypePlugins: [mdxPrism],
+      rehypePlugins: [require('mdx-prism')],
     },
   });
 
