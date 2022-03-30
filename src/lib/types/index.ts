@@ -1,7 +1,10 @@
 export type PostData = {
+  slug: string;
   title: string;
+  author: string;
+  description: string;
+  keywords: string[];
   date: string;
-  tags: string[];
 };
 
 export type Post = {
