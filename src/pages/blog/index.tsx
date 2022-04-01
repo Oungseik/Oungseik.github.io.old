@@ -9,7 +9,7 @@ function Post({ data }: { data: PostData }) {
   return (
     <div>
       <Link href={`/blog/posts/${data.slug}`}>
-        <a className='block text-lg font-bold text-blue-500 hover:text-blue-600 md:text-2xl '>
+        <a className='block text-lg font-bold text-sky-500 hover:text-sky-600 md:text-2xl '>
           {data.title}
         </a>
       </Link>
@@ -24,7 +24,7 @@ function Post({ data }: { data: PostData }) {
 
 export default function Blog({ allPostsData }: { allPostsData: PostData[] }) {
   return (
-    <section className='my-10 mx-auto max-w-screen-sm space-y-8'>
+    <section className='my-10 mx-auto max-w-screen-sm space-y-8 px-3'>
       <h1 className='opacity-70'>What&apos;s New!</h1>
       {allPostsData.slice(0, 10).map((data) => (
         <Post key={data.slug} data={data} />
