@@ -9,5 +9,5 @@ export type PostData = {
 
 export type Post = {
   data: PostData;
-  content: string;
+  content: Promise<string>;
 };

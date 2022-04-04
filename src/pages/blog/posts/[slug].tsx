@@ -1,7 +1,5 @@
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
 import Head from 'next/head';
-import { MDXRemote } from 'next-mdx-remote';
-import { serialize } from 'next-mdx-remote/serialize';
 
 import { fullPath, getPost, slugs } from '@/lib/posts';
 
@@ -9,7 +7,7 @@ import Post from '@/components/layout/Post';
 
 export default function BlogPosts({
   data,
-  source,
+  contentHTML,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <>
@@ -17,7 +15,7 @@ export default function BlogPosts({
         <title>{data.title}</title>
       </Head>
       <Post>
-        <MDXRemote {...source} />
+        <div dangerouslySetInnerHTML={{ __html: contentHTML }} />
       </Post>
     </>
   );
@@ -35,19 +33,11 @@ export async function getStaticPaths() {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const slug = params?.slug;
-  const file = fullPath(slug + '.mdx');
-
-  const { data, content } = getPost(file);
-
-  const mdxSource = await serialize(content, {
-    mdxOptions: {
-      remarkPlugins: [],
-      rehypePlugins: [require('mdx-prism')],
-    },
-  });
+  const id = params?.slug;
+  const file = fullPath(id + '.md');
+  const { data, contentHTML } = await getPost(file);
 
   return {
-    props: { data, source: mdxSource },
+    props: { data, contentHTML },
   };
 };
