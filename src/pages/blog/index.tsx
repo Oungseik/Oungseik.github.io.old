@@ -1,16 +1,18 @@
-import Link from 'next/link';
-
 import { getAllPostsData } from '@/lib/posts';
 import { PostData } from '@/lib/types';
 
+import A from '@/components/utilities/A';
 import Date from '@/components/utilities/Date';
 
 function Post({ data }: { data: PostData }) {
   return (
     <div>
-      <Link href={`/blog/posts/${data.slug}`}>
-        <a className='block text-lg font-bold  md:text-2xl '>{data.title}</a>
-      </Link>
+      <A
+        className='block text-lg font-bold  md:text-2xl '
+        href={`/blog/posts/${data.slug}`}
+      >
+        {data.title}
+      </A>
       {/* TODO reserve to render tags */}
       <Date
         className='text-sm opacity-70 md:text-base'
