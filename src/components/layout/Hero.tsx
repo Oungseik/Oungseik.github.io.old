@@ -13,7 +13,7 @@ function Hero() {
           width={160}
         />
         <div className='animate-fadein space-y-3'>
-          <p> Hello, there! </p>
+          <h1> Hello, there! </h1>
           <p>
             I&apos;m{' '}
             <span className='relative text-xl md:text-3xl'>
