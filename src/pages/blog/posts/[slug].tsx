@@ -14,9 +14,7 @@ export default function BlogPosts({
       <Head>
         <title>{data.title}</title>
       </Head>
-      <Post>
-        <div dangerouslySetInnerHTML={{ __html: contentHTML }} />
-      </Post>
+      <Post contentHTML={contentHTML} />
     </>
   );
 }

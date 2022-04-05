@@ -50,7 +50,7 @@
 
   h1,
   .h1 {
-    @apply text-center text-2xl font-bold md:text-4xl;
+    @apply pb-4 text-center text-2xl font-bold md:text-4xl;
   }
 
   h2,
