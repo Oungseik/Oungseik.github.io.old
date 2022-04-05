@@ -69,11 +69,11 @@
   }
 
   pre {
-    @apply border-y py-2;
+    @apply overflow-auto rounded-lg bg-gray-800 p-2 text-sm;
   }
 
-  p {
-    @apply md:text-lg;
+  code {
+    @apply text-green-500;
   }
 
   a {
