@@ -9,9 +9,7 @@ function Post({ data }: { data: PostData }) {
   return (
     <div>
       <Link href={`/blog/posts/${data.slug}`}>
-        <a className='block text-lg font-bold text-sky-500 hover:text-sky-600 md:text-2xl '>
-          {data.title}
-        </a>
+        <a className='block text-lg font-bold  md:text-2xl '>{data.title}</a>
       </Link>
       {/* TODO reserve to render tags */}
       <Date

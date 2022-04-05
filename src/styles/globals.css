@@ -71,4 +71,12 @@
   pre {
     @apply border-y py-2;
   }
+
+  p {
+    @apply md:text-lg;
+  }
+
+  a {
+    @apply text-sky-500 hover:text-sky-600;
+  }
 }
