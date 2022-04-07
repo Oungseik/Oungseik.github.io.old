@@ -19,7 +19,9 @@ export default function About() {
         <title>Oung Seik Nyan - About </title>
       </Head>
       <article className='mx-auto max-w-screen-sm space-y-4 px-3 py-10 tracking-wide text-gray-700'>
-        <h1 className='text-center text-3xl font-bold md:text-4xl'>About</h1>
+        <h1 className='pb-0 text-center text-3xl font-bold md:text-4xl'>
+          About
+        </h1>
         <section className='space-y-4 md:text-lg'>
           <p>
             Hi, I&apos;m Min Aung Thu Win. Oung Seik is my name in the Mon
