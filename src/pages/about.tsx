@@ -59,10 +59,10 @@ export default function About() {
             than Object-oriented Programming.
           </p>
 
-          <h3 className='pt-4 text-lg leading-tight opacity-95'>
+          <h4 className='pt-4 leading-tight opacity-95'>
             These are the things I have learned to some degree but have not
             applied to my projects.
-          </h3>
+          </h4>
           <ul className='list-inside list-disc'>
             {tools.map((tool) => (
               <li key={tool}>{tool} </li>
