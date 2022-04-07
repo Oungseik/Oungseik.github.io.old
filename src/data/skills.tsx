@@ -21,7 +21,7 @@ export const skills: CardProps[] = [
       icon: <FaRust size='4rem' />,
     },
     cardBackProps: {
-      twClasses: 'text-xs',
+      twClasses: 'text-xs md:text-sm',
       icon: <FaRust size='1.25rem' />,
       description:
         'My favorite programming language. Programming in small details may arise many problems, but these things remind me what I need to learn.',
