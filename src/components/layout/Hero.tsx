@@ -13,7 +13,7 @@ function Hero() {
           width={160}
         />
         <div className='animate-fadein space-y-3'>
-          <h1> Hello, there! </h1>
+          <h1 className='pb-0 leading-relaxed'> Hello, there! </h1>
           <p>
             I&apos;m{' '}
             <span className='relative text-xl md:text-3xl'>
@@ -24,7 +24,7 @@ function Hero() {
             </span>{' '}
             (Oung Seik Nyan)
           </p>
-          <p>
+          <p className='leading-relaxed'>
             Web Developer and Computer Science Enthusiast from Mawlamyine, Mon
             State, Burma.{' '}
             <A

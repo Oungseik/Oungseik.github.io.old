@@ -11,16 +11,23 @@ type NavItemProps = {
 
 function NavItem({ href, current, text, icon }: NavItemProps) {
   return (
-    <li>
+    <li className='group'>
       <Link href={href}>
         <a
           className={clsxm(
-            'flex items-center space-x-1 rounded-lg px-2 py-1 text-sm font-semibold text-gray-100 transition duration-300 hover:bg-gray-600 md:text-xl',
-            current && 'text-sky-500'
+            'flex items-center space-x-2 rounded-lg px-3 py-1 font-semibold text-gray-100 transition duration-300 group-hover:bg-gray-600 group-hover:text-sky-300 md:px-4 md:text-xl',
+            current && 'text-sky-400'
           )}
         >
-          {icon}
-          <span>{text}</span>
+          <span
+            className={clsxm(
+              'text-gray-300 transition duration-300 group-hover:text-sky-300/80',
+              current && 'text-sky-400/80'
+            )}
+          >
+            {icon}
+          </span>
+          <span className='tracking-wide'>{text}</span>
         </a>
       </Link>
     </li>

@@ -18,16 +18,14 @@ export default function About() {
       <Head>
         <title>Oung Seik Nyan - About </title>
       </Head>
-      <article className='mx-auto max-w-screen-sm space-y-4 px-3 py-10 text-gray-800'>
+      <article className='mx-auto max-w-screen-sm space-y-4 px-3 py-10 tracking-wide text-gray-700'>
         <h1 className='text-center text-3xl font-bold md:text-4xl'>About</h1>
         <section className='space-y-4 md:text-lg'>
           <p>
             Hi, I&apos;m Min Aung Thu Win. Oung Seik is my name in the Mon
             language. I was born in Mawlamyine, Mon State, Burma.
           </p>
-          <h2 className='pt-6 text-center text-xl font-semibold'>
-            Childhood Life
-          </h2>
+          <h3 className='pt-6 text-center'>Childhood Life</h3>
           <p>
             I&apos;m graduated high school education from B.E.H.S Thukhawaddy,
             Mawlamyine. During summer, my father taught me how to craft easy
@@ -35,7 +33,7 @@ export default function About() {
             Mawlamyine University from 2014 to 2018. I graduated with a Bachelor
             of Science(Maths) on Feb 14, 2019.{' '}
           </p>
-          <h2 className='pt-6 text-center text-xl font-semibold'> Careers </h2>
+          <h3 className='pt-6 text-center'> Careers </h3>
           <p>
             My first job as a field officer in the KEB Hana microfinance company
             was from January to March 2019. But I quit the job during the three
@@ -44,9 +42,7 @@ export default function About() {
             store. I got a lot of experiences, such as how to deal with
             customers, about plants and treatments.
           </p>
-          <h2 className='pt-6 text-center text-xl font-semibold'>
-            Software Development Journey
-          </h2>
+          <h3 className='pt-6 text-center'>Software Development Journey</h3>
           <p>
             After back from Sagaing, I started investing my time in software
             development. I started with Python programming language, to learn
@@ -61,11 +57,11 @@ export default function About() {
             than Object-oriented Programming.
           </p>
 
-          <h3 className='pt-4 font-semibold'>
+          <h3 className='pt-4 text-lg leading-tight opacity-95'>
             These are the things I have learned to some degree but have not
             applied to my projects.
           </h3>
-          <ul className='list-inside list-disc text-sky-600'>
+          <ul className='list-inside list-disc'>
             {tools.map((tool) => (
               <li key={tool}>{tool} </li>
             ))}
