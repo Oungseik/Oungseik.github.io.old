@@ -17,7 +17,7 @@ function CardFront({ twClasses, icon, title }: CardFrontProps) {
         twClasses
       )}
     >
-      {icon}
+      <span className='opacity-90'>{icon}</span>
       <span>{title}</span>
     </div>
   );

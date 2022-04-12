@@ -39,9 +39,11 @@ function SocialMedia() {
       <p className='flex text-gray-100'>
         <a
           href='mailto:mhemaungthuwin@gmail.com'
-          className='inline-flex items-center border-b-2 border-b-sky-600/0 pr-2 font-bold text-sky-600 transition duration-300 hover:border-sky-600/100'
+          className='inline-flex items-center border-b-2 border-b-sky-600/0 pr-2 font-bold text-sky-500 transition duration-300 hover:border-sky-600/100'
         >
-          <MdEmail size='1.625rem' />
+          <span className='text-sky-600'>
+            <MdEmail size='1.625rem' />
+          </span>
           <span className='pl-1'>Email me</span>
         </a>
         or reach me on:

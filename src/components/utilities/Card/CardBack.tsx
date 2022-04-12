@@ -20,7 +20,8 @@ function CardBack({ twClasses = '', icon, title, description }: CardBackProps) {
       )}
     >
       <div className='flex space-x-1 border-b-2 border-gray-700 pb-2'>
-        {icon} <span>{title}</span>
+        <span className='opacity-90'>{icon}</span>
+        <span>{title}</span>
       </div>
 
       <div className='text-center'>
@@ -28,7 +29,8 @@ function CardBack({ twClasses = '', icon, title, description }: CardBackProps) {
       </div>
 
       <div className='flex rotate-180 space-x-1 border-b-2 border-gray-700 pb-2'>
-        {icon} <span>{title}</span>
+        <span className='opacity-90'>{icon}</span>
+        <span>{title}</span>
       </div>
     </div>
   );

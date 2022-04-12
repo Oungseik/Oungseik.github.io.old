@@ -4,10 +4,12 @@ import Cards from './Cards';
 
 function Skills() {
   return (
-    <div className='mx-auto flex max-w-screen-lg flex-col px-3 py-12 md:pb-16'>
+    <div className='mx-auto mt-12 flex max-w-screen-lg flex-col px-3 md:mt-16'>
       <div className='space-y-2'>
         <h2 className='flex text-3xl font-semibold text-sky-700 '>
-          <GiSkills />
+          <span className='opacity-90'>
+            <GiSkills />
+          </span>
           <span className='pl-2'>Skills</span>
         </h2>
         <p className='text-lg text-gray-700 md:text-xl'>
