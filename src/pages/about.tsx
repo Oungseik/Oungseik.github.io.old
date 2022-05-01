@@ -24,7 +24,7 @@ export default function About() {
         </h1>
         <section className='space-y-4 md:text-lg'>
           <p>
-            Hi, I&apos;m Min Aung Thu Win. Oung Seik is my name in the Mon
+            Hi, I&apos;m Min Aung Thu Win. Oung Seik Nyan is my name in the Mon
             language. I was born in Mawlamyine, Mon State, Burma.
           </p>
           <h3 className='pt-6 text-center'>Childhood Life</h3>
