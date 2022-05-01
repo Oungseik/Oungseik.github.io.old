@@ -46,38 +46,38 @@ const timeLines = [
 
 function TimeLine({ from, to, title, description }: TimeLineProps) {
   return (
-    <ul className='text-gray-700'>
-      <li>
-        <div className='flex space-x-8'>
-          <div className=' rounded-sm bg-sky-700 shadow-sm'>
-            <div className='ml-1.5 grow space-y-2 bg-gray-50 py-2 pl-3'>
-              <h4 className='font-semibold text-gray-700'>
-                {from} - {to}{' '}
-                <span className='hidden pl-6 md:inline'>{title}</span>
-              </h4>
-              <p dangerouslySetInnerHTML={{ __html: description }} />
-            </div>
+    <li className='text-gray-700'>
+      <div className='flex space-x-8'>
+        <div className=' w-[640px] rounded-sm bg-sky-700/90 shadow-sm'>
+          <div className='ml-1.5 grow space-y-2 bg-gray-50 py-2 pl-3'>
+            <h4 className='font-semibold text-gray-700'>
+              {from} - {to}{' '}
+              <span className='hidden pl-6 md:inline'>{title}</span>
+            </h4>
+            <p dangerouslySetInnerHTML={{ __html: description }} />
           </div>
         </div>
-      </li>
-    </ul>
+      </div>
+    </li>
   );
 }
 
 function Timelines() {
   return (
-    <div className='mx-auto mt-12 animate-fadein-timeline px-3 md:mt-16 md:max-w-[548px] md:px-0'>
-      <h2 className='flex items-center pb-8 text-3xl font-semibold text-sky-700 md:pb-10'>
-        <span className='opacity-90'>
-          <BsFillCalendarCheckFill />
-        </span>
-        <span className='pl-2'>Timeline</span>
-      </h2>
-      <ul className='space-y-6 text-gray-700'>
-        {timeLines.map((tl) => (
-          <TimeLine key={tl.from + tl.to} {...tl} />
-        ))}
-      </ul>
+    <div className='mx-auto mt-12 max-w-screen-lg animate-fadein-timeline md:mt-16'>
+      <div className='px-3'>
+        <h2 className='flex items-center pb-8 text-3xl font-semibold text-sky-700 md:pb-10'>
+          <span className='opacity-90'>
+            <BsFillCalendarCheckFill />
+          </span>
+          <span className='pl-2'>Timeline</span>
+        </h2>
+        <ul className='space-y-6 text-gray-700'>
+          {timeLines.map((tl) => (
+            <TimeLine key={tl.from + tl.to} {...tl} />
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
