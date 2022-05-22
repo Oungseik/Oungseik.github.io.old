@@ -11,7 +11,7 @@ const timeLines = [
   {
     from: '2022 April',
     to: 'Present',
-    title: 'Junior Quality Assurance Engineer',
+    title: 'Junior Frontend Web Developer',
     description:
       "I have chosen to join the <strong>QA team</strong> of Myanmar's No.1 Testing Company <strong>(Qualy Myanmar)</strong>.",
   },
