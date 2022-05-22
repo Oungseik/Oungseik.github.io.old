@@ -64,7 +64,7 @@ function TimeLine({ from, to, title, description }: TimeLineProps) {
 
 function Timelines() {
   return (
-    <div className='mx-auto mt-12 max-w-screen-lg animate-fadein-timeline md:mt-16'>
+    <div className='mx-auto mt-12 max-w-screen-sm animate-fadein-timeline md:mt-16'>
       <div className='px-3'>
         <h2 className='flex items-center pb-8 text-3xl font-semibold text-sky-700 md:pb-10'>
           <span className='opacity-90'>
