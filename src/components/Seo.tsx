@@ -13,7 +13,7 @@ const defaultMeta = {
   type: 'website',
   robots: 'follow, index',
   /** No need to be filled, will be populated with openGraph function */
-  image: '',
+  image: 'public/images/og-img.png',
 };
 
 type SeoProps = {
